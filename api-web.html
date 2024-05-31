@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="api-style.css" rel="stylesheet">
+
+    <title>Just a test</title>
+</head>
+<body>
+    <header> 
+        <div class="container animated-border"> 
+            <h1>Secret image generator</h1>
+        </div>
+
+    </header>
+
+    <div class="button-container">
+        <input id="tag-text" placeholder="tags: neko, waifu, pat">
+        <button class="show-image">generate </button> <br>
+        <button id="hide-button"> Hide image</button>
+    </div>
+
+    <br><br><br><br>
+
+    <div id="img-container"> 
+        <img id="anime-img" src="" alt="neko picture">
+    </div>
+    
+    <div class="search-container"> 
+        <div class="anime-buttons">
+            <input type="text" placeholder="Search an anime" id="anime-id">
+            <button id="send-id" onclick="getAnime()"> send id</button>
+            <button class="close-button" onclick="clearResults()"> Clear results</button>
+        </div>
+        <br>
+        <div class="manga-buttons">
+            <input type="text" placeholder="Search a manga" id="manga-id">
+            <button id="send-id" onclick="getManga()"> send id</button>
+            <button class="close-button" onclick="clearResults()"> Clear results</button>
+        </div>
+    </div>
+
+    <div> 
+        <br>
+
+        <div id="search-info-container">
+            <h3 id="manga-text"></h3>
+        </div>
+    </div>
+
+    <script src="API.js"></script>
+    <script src="mangaAPI.js"></script>
+</body>
+</html>
