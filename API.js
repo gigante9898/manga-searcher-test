@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				const url = `https://nekos.best/api/v2/${input}`
 				
 	
-				if (validTags.includes(input)) {
+				if (validTags.includes(input.toLowerCase())) {
 					try {
 						const response = await fetch(url)
 						const data = await response.json();
