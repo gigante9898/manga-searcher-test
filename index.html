@@ -15,10 +15,14 @@
 
     </header>
 
-    <div class="button-container">
+    <div class="tag-container">
         <input id="tag-text" placeholder="tags: neko, waifu, pat">
-        <button class="show-image">generate </button> <br>
-        <button id="hide-button"> Hide image</button>
+        <div class="tag-button-container">
+            
+            <button class="show-image">generate </button>
+            <button id="hide-button"> Hide image</button>
+
+        </div>
     </div>
 
     <br><br><br><br>
@@ -29,15 +33,22 @@
     
     <div class="search-container"> 
         <div class="anime-buttons">
+            
             <input type="text" placeholder="Search an anime" id="anime-id">
-            <button id="send-id" onclick="getAnime()"> send id</button>
-            <button class="close-button" onclick="clearResults()"> Clear results</button>
+            <div class="button-container">
+                <button id="send-id" onclick="getAnime()"> search anime</button>
+                <button class="close-button" onclick="clearResults()"> Clear results</button>
+            </div>
         </div>
-        <br>
+        
         <div class="manga-buttons">
             <input type="text" placeholder="Search a manga" id="manga-id">
-            <button id="send-id" onclick="getManga()"> send id</button>
-            <button class="close-button" onclick="clearResults()"> Clear results</button>
+            <div class="button-container"> 
+
+                <button id="send-id" onclick="getManga()"> search manga</button>
+                <button class="close-button" onclick="clearResults()"> Clear results</button>
+
+            </div>
         </div>
     </div>
 
@@ -46,6 +57,15 @@
 
         <div id="search-info-container">
             <h3 id="manga-text"></h3>
+            
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fuga.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, provident?</p>
         </div>
     </div>
 
