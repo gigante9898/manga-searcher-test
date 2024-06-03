@@ -3,11 +3,12 @@ const background = document.getElementById('anime-background')
 const text = document.getElementById('manga-text')
 const container = document.getElementById('search-info-container')
 
+
+
 function clearResults() {
     container.innerHTML = ''
     container.style.display = 'none'
 }
-
 
 async function getAnime() {
     const input = document.getElementById('anime-id').value
@@ -75,7 +76,7 @@ async function getManga() {
             window.open(mangaList.url)
         })
 
-        const manga_name = document.createElement('h3')
+        const manga_name = document.createElement('h3') 
         manga_name.classList.add('title')
         manga_name.textContent = mangaList.title
         
@@ -92,7 +93,6 @@ async function getManga() {
     // container.style.display = "flex"
     // text.innerHTML = manga[0].title
     // window.open(manga[0].url)
-
 }
 
 
