@@ -170,7 +170,7 @@ input {
   max-height: 86rem;
   overflow: hidden;
   background-color: #616268;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
