@@ -34,20 +34,20 @@ document.addEventListener("DOMContentLoaded", function() {
 						placeHolderText.placeholder = "try with 'neko', 'pat', 'waifu'"
 						setTimeout(() =>{
 							placeHolderText.classList.remove('red-placeholder')
-							placeHolderText.placeholder = "try with 'neko', 'pat', 'waifu'"
+							placeHolderText.placeholder = "tags: neko, waifu, pat"
 
 						}, 3000)
 					}
 				}		
-	getData()
-		});
+	getData()}
+		);
 	}
 });
 
 
 hideButton.onclick = function hideNeko() {
 	image_container.style.display = "none"
-
 	image.style.display = "none"
+	placeHolderText.value = ''
 }
 
